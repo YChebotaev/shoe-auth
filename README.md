@@ -5,7 +5,7 @@ Authentication stream for shoe
 
 usage
 -----
-
+``` javascript
   var shoe = require('shoe'),
       http = require('http'),
       inherits = require('util').inherits;
@@ -61,3 +61,8 @@ usage
       .pipe(authenticator)
       .pipe(stream);
   });
+  
+  var httpServer = http.createServer();
+  
+  ws.install(httpServer);
+```
