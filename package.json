@@ -2,5 +2,6 @@
 	"name": "shoe-auth",
 	"private": true,
 	"dependencies": {},
-	"devDependencies": {}
+	"devDependencies": {},
+	"main": "./lib/authenticator"
 }
