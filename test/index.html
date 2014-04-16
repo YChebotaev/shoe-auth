@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shoe-auth</title>
+	<script src="http://cdn.sockjs.org/sockjs-0.3.min.js"></script>
+</head>
+<body>
+
+	<script>
+		var socket = new SockJS('http://localhost:8080/ws');
+		socket.onmessage = console.log.bind(console, 'message:');
+		socket.onopen = console.log.bind(console, 'open:');
+		socket.onclose = console.log.bind(console, 'close:');
+	</script>
+</body>
+</html>
